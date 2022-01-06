@@ -3,7 +3,7 @@
 // Created date: 12/30/2021
 // Author: Clint Kline
 // Purpose:
-//  - Create my oen version of the game tetris
+//  - Create my own version of the game tetris
 
 // ========================
 // searchbox :>> console
@@ -59,7 +59,6 @@ let minicanvasData = minictx.getImageData(0, 0, 120, 120);
 // paints data from the given ImageData object onto the canvas
 minictx.putImageData(minicanvasData, 0, 0);
 
-// 
 
 // vars to test for overlap of tets at top of gamebox as indicator for lost game
 var safetyFlag = false;
