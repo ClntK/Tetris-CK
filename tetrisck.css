@@ -1,0 +1,189 @@
+/* 
+Project: Tetris CK
+Filename: tetrisck.css
+Created date: 12/30/2021
+Author: Clint Kline
+Purpose:
+ - Create my oen version of the game tetris 
+ */
+
+ /* *, ::before, ::after {
+     margin: auto;
+     text-align: center;
+    } */
+    
+/* html {
+    width: 100%;
+    padding: 10px auto;
+} */
+
+body {
+    background-color: black;
+    color: whitesmoke;
+}
+
+h2 {
+    text-align:     center;
+    padding:        0px 0px 10px 0px;
+    margin:         0px;
+}
+
+/* #screen {
+    width: 95%;
+} */
+
+.instructions {
+    display: inline;
+    float: left;
+    border: 1px solid yellow;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 20px;
+    width: 20%;
+    min-width: 232px;
+}
+
+#banner {
+    height: 140px;
+    border: 1px solid cyan;
+    padding: 20px 30px;
+}
+
+#title {
+    position: relative;
+    float: left;
+    width: 50%;
+    margin: 30px 0 0 0;
+    color: orange;   
+    font-size: 40px;
+    text-align: left;
+}
+
+#nextpiece {
+    float: right;
+}
+
+#minicanvas {
+    border: 1px solid white;
+    text-align: center;
+}
+
+
+#gamebox {
+    border: 1px solid blue;
+    display: inline;
+    float: left;
+    margin: 10px;
+    width: 45%;
+    min-width: 540px;
+}
+
+#gamescreen {
+    border: 3px solid red;
+    width:434px;
+    margin: 30px auto;
+}
+
+#canvas {
+    width: 432;
+    height: 528;
+}
+
+.col3 {
+    border: 1px solid orange;
+    display: inline;
+    float: left;
+    margin: 10px;
+    margin-top: 50px;
+    padding: 10px;
+}
+
+.small {
+    display: none;
+}
+
+.big {
+    width: 20%;    
+    
+}
+
+.timebox {
+    border: 1px solid green;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.timer {
+    font-size: 30px;
+    padding: 10px;
+}
+
+.scorebox {
+    border: 1px solid purple;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+.score {
+    font-size: 32px;
+    padding: 10px;
+    text-align: center;
+}
+
+#mobileInst {
+    display: none;
+}
+
+
+@media only screen and (max-width: 1150px) {
+    
+    #gamebox {
+        margin: auto;
+    }
+
+    .instructions {
+        float: right;
+        margin: 50px auto;
+    }
+    
+    .big {
+        display: none;
+    }
+    
+    .small {
+        display: block;
+        margin: auto;
+        width: 50px auto;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+    
+    #desktopInst {
+        display: none;
+    }
+
+    #mobileInst {
+        display: block;
+        float: left;
+        border: 1px solid yellow;
+        margin: auto;
+        margin-top: 50px;
+        padding: 20px;
+        width: 90%;
+
+    }
+
+    ul {
+        float: left;
+        width: 45%;
+    }
+    
+    .col3 {
+        margin-top: 20px;
+        float: right;
+    }
+}
